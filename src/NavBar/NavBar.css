@@ -1,0 +1,9 @@
+.head{
+	border: 1px solid black;
+	text-align: center;
+}
+table{
+	font-size: 30px;
+	width: 50vw;
+	margin-left: 25vw;
+}
