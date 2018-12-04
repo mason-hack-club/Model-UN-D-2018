@@ -8,7 +8,7 @@ import GILCAMP from './GIL_Camp/GILCAMP.js';
 class App extends React.Component{
 	constructor(props){
 		super(props);
-		this.state = {page: 1};
+		this.state = {page: 0};
 	}
 
 	handleClick(e, pagenum){
