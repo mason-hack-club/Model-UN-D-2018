@@ -3,7 +3,7 @@ import './App.css';
 import HomePage from './HomePage/HomePage.js';
 import ClubPage from './ClubPage/ClubPage.js';
 import WMHSMUNIV from './WMHSMUNIV/WMHSMUNIV.js';
-import GILCAMP from './GIL_CAMP/GILCAMP.js';
+import GILCAMP from './GIL_Camp/GILCAMP.js';
 
 class App extends React.Component{
 	constructor(props){
