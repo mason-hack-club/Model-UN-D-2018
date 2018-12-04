@@ -5,13 +5,11 @@ class NavBar extends React.Component{
 	render(){
 		return(
 		<div>
-		  <table>
-		    <tr>
-			<td className="head">ABOUT</td>
-			<td className="head">WMHSMUN</td>
-			<td className="head">GIL CAMP</td>
-		    </tr>
-		  </table>
+			<ul className="outer">
+			<li className="inner">ABOUT</li>
+			<li className="inner">WMHSMUN</li>
+			<li className="inner">GIL CAMP</li>
+			</ul>
 		</div>
 		);
 	}
