@@ -1,16 +1,28 @@
 import React from 'react';
 import './App.css';
-import Logo from  './.Assets/munlogo.png';
-import NavBar from './NavBar/NavBar.js';
+import HomePage from './HomePage/HomePage.js';
+import ClubPage from './ClubPage/ClubPage.js';
+import WMHSMUNIV from './WMHSMUNIV/WMHSMUNIV.js';
+import GILCAMP from './GIL_CAMP/GILCAMP.js';
 
 class App extends React.Component{
+	constructor(props){
+		super(props);
+		this.state = {page: 1};
+	}
+
+	handleClick(e, pagenum){
+		e.preventDefault();
+		this.setState({page: pagenum});
+	}
+
 	render(){
-		return(
-		<div>
-			<img className="logo" src={Logo} alt="Model UN"/>
-			<NavBar />
-		</div>
-		);
+		switch (this.state.page){
+			case 1: return(<ClubPage/>);
+			case 2: return(<WMHSMUNIV/>);
+			case 3: return(<GILCAMP/>);
+			default: return(<HomePage/>);
+		}
 	}
 }
 
