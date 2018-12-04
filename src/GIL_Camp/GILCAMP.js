@@ -1,5 +1,5 @@
 import React from 'react';
-import 'GILCAMP.css';
+import './GILCAMP.css';
 
 class GILCAMP extends React.Component{
 	render(){

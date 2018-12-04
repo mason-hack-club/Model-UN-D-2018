@@ -1,5 +1,5 @@
 import React from 'react';
-import 'WMHSMUNIV.css';
+import './WMHSMUNIV.css';
 
 class WMHSMUNIV extends React.Component{
 	render(){
