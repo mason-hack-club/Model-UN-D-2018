@@ -9,6 +9,7 @@ class App extends React.Component{
 	constructor(props){
 		super(props);
 		this.state = {page: 0};
+		this.handleClick = this.handleClick.bind(this);
 	}
 
 	handleClick(e, pagenum){
@@ -18,10 +19,10 @@ class App extends React.Component{
 
 	render(){
 		switch (this.state.page){
-			case 1: return(<ClubPage/>);
-			case 2: return(<WMHSMUNIV/>);
-			case 3: return(<GILCAMP/>);
-			default: return(<HomePage/>);
+			case 1: return(<ClubPage page={this.handleClick}/>);
+			case 2: return(<WMHSMUNIV page={this.handleClick}/>);
+			case 3: return(<GILCAMP page={this.handleClick}/>);
+			default: return(<HomePage page={this.handleClick}/>);
 		}
 	}
 }

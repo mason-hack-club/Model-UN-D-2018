@@ -8,16 +8,16 @@
 }
 
 .inner {
-	font-size: 5vh;
+	font-size: 2vw;
 	color: white;
 	display: block;
 	float: left;
-	padding-left: 5vw;
+	padding-left: 6vw;
 	padding-right: 5vw;
 	padding-top: 3vh;
 	padding-bottom: 3vh;
 	text-align: center;
-	text-decoration: one;
+	text-decoration: none;
 }
 
 .inner:hover {
