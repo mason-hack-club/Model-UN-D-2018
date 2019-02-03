@@ -1,0 +1,45 @@
+.logo{
+	width: 30vw;
+	margin-left: 35vw;
+}
+
+.submit{
+	background-color: #333;
+	color: white;
+	display: block;
+	width: 10vw;
+	font-size: 1vw;
+	text-align: center;
+}
+.submit:hover {
+	background-color: #111;
+	border-bottom: solid #39ff14 5px;
+}
+.type{
+	width: 50vw;
+	margin-left: 25vw;
+	word-wrap: true;
+}
+.form{
+	margin-top: 5vh;
+	margin-right: 5vw;
+}
+
+.Button {
+	font-size: 2vw;
+	color: white;
+	background-color: #333;
+	margin-right: 1vw;
+	margin-left: 1vw;
+	padding-left: 6vw;
+	padding-right: 5vw;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+	text-align: center;
+	text-decoration: none;
+}
+
+.Button:hover {
+	background-color: #111;
+	border-bottom: solid #39ff14 5px;
+}

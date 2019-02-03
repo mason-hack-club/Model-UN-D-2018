@@ -4,6 +4,7 @@ import HomePage from './HomePage/HomePage.js';
 import ClubPage from './ClubPage/ClubPage.js';
 import WMHSMUNIV from './WMHSMUNIV/WMHSMUNIV.js';
 import GILCAMP from './GIL_Camp/GILCAMP.js';
+import Register from './Register/Register.js';
 
 class App extends React.Component{
 	constructor(props){
@@ -22,6 +23,7 @@ class App extends React.Component{
 			case 1: return(<ClubPage page={this.handleClick}/>);
 			case 2: return(<WMHSMUNIV page={this.handleClick}/>);
 			case 3: return(<GILCAMP page={this.handleClick}/>);
+			case 4: return(<Register page={this.handleClick}/>);
 			default: return(<HomePage page={this.handleClick}/>);
 		}
 	}

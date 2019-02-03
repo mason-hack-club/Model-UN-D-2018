@@ -7,6 +7,11 @@ class GILCAMP extends React.Component{
 		return(
 		<div>
 			<NavBar page={this.props.page}/>
+			<h1>About</h1>
+			<h1>Model UN</h1>
+			<h1>Schedule</h1>
+			<h1>Staff</h1>
+			<h1>Register</h1>
 		</div>);
 	}
 }

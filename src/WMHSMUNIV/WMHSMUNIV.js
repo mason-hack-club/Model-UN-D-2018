@@ -7,6 +7,9 @@ class WMHSMUNIV extends React.Component{
 		return(
 		<div>
 			<NavBar page={this.props.page}/>
+			<h1>Registration</h1>
+			<h1>Conferences</h1>
+			<h1>Committees</h1>
 		</div>);
 	}
 }
