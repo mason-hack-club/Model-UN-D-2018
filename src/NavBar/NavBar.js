@@ -1,13 +1,15 @@
 import React from 'react';
 import './NavBar.css';
+import logo from '../Assets/munlogo.png';
 
 class NavBar extends React.Component{
 	render(){
 		return(
 		<div>
+			<img onClick={(e) => {this.props.page(e, 0)}} 
+			className="logo" src={logo} alt="logo"/>
+
 			<ul className="outer">
-			<li className="inner">
-			   </li>
 			<li onClick={(e) => {this.props.page(e, 1)}} 
 			className="inner">ABOUT
 			</li>

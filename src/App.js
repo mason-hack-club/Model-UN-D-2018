@@ -4,7 +4,7 @@ import HomePage from './HomePage/HomePage.js';
 import ClubPage from './ClubPage/ClubPage.js';
 import WMHSMUNIV from './WMHSMUNIV/WMHSMUNIV.js';
 import GILCAMP from './GIL_Camp/GILCAMP.js';
-import Register from './Register/Register.js';
+import Register from './Contact/Contact.js';
 
 class App extends React.Component{
 	constructor(props){
