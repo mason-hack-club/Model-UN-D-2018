@@ -3,4 +3,12 @@
 	margin-top: 1vh;
 	height: 65vh;
 	width: 65vw;
+	animation-name: phasein;
+	animation-duration: 3.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes phasein{
+	0%, 90% {opacity: 1}
+	100% {opacity: .5}
 }

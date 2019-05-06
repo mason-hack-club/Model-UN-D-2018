@@ -12,6 +12,8 @@ class Contact extends React.Component{
   			<form>
     				<label for="fname">First Name</label>
     				<input type="text" id="fname" name="firstname" placeholder="Lastname, Firstname"></input>
+    				<label for="school">School</label>
+    				<input type="text" id="school" name="school" placeholder="Please name a school"></input>
     				<label for="subject">Question</label>
     				<textarea style={{height: '30vh'}}id="subject" name="subject" 
 					placeholder="We will answer anything within the next 48 hours"></textarea>

@@ -3,7 +3,7 @@ import './HomePage.css';
 import NavBar from '../NavBar/NavBar.js';
 
 class HomePage extends React.Component{
-	
+
 	constructor(props){
 		super(props);
 		this.state = {
@@ -11,9 +11,18 @@ class HomePage extends React.Component{
 		};
 	}
 
-	componentDidMount(){
+	componentDidMount(){	
+		var result = null;
+  		var filePath = require("../Assets/Photos/names.txt");
+		var xmlhttp = new XMLHttpRequest();
+  		xmlhttp.open("GET", filePath, false);
+  		xmlhttp.send();
+  		if (xmlhttp.status === 200) {
+    			result = xmlhttp.responseText;
+  		}
+		var lines = result.split("\n");
 		this.interval = setInterval(()=>{
-			if (this.state.image + 1 > 5){
+			if (this.state.image + 1 > lines.length - 1){
 				this.setState({image: 1});
 			}
 			else{
@@ -25,9 +34,18 @@ class HomePage extends React.Component{
 	componentWillUnmount(){
 		clearInterval(this.interval);
 	}	
-	
+
 	render(){
-		let file = require("../Assets/Photos/" + this.state.image.toString() + ".jpg");
+		var result = null;
+  		var filePath = require("../Assets/Photos/names.txt");
+		var xmlhttp = new XMLHttpRequest();
+  		xmlhttp.open("GET", filePath, false);
+  		xmlhttp.send();
+  		if (xmlhttp.status === 200) {
+    			result = xmlhttp.responseText;
+  		}
+		var lines = result.split("\n");
+		let file = require("../Assets/Photos/" + lines[this.state.image - 1]);
 		return(
 		<div>
 			<NavBar page={this.props.page}/>
